@@ -62,10 +62,11 @@ fi
 # ********** ********** **********
 
 alias ls='ls -GFh'          # better ls
-alias mkpdf='wkhtmltopdf'   # b/c I can't remember that
 alias vi='nvim'             # Neovim instead of vi
 alias cat='bat'             # color for cat
 alias poe='poetry'          # funny Poetry command (python)
+
+# Git:
 alias ga='git add'         # b/c I use git too often not to
 alias gc='git commit -m'
 alias gcl='git clone'
@@ -84,8 +85,6 @@ alias oshit-c="git add .; git commit --amend --no-edit"
 alias oshit-m="git commit --amend"
 alias oshit-i="git rm -r --cached .; ga .; gc \"Cleaning ignored files\""
 
-# Rust
-alias depdocs="cargo doc --open"
 
 # Python / Django:
 alias python='python3'

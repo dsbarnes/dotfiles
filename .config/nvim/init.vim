@@ -6,8 +6,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
   Plug 'tpope/vim-vinegar'
   Plug 'tpope/vim-surround'
-  " Plug 'tpope/vim-fugitive'
-  " Plug 'arcticicestudio/nord-vim'
+  Plug 'tpope/vim-fugitive'
   Plug 'morhetz/gruvbox'
 call plug#end()
 
