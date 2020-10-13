@@ -100,6 +100,9 @@ alias python='python3'
 #              Paths 
 # ********** ********** **********
 
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"
+
 # Some forgotten shit:
 # flake8 (Py 2 & 3)
 # PYTHON3_USER_SITE="${HOME}/Library/Python/3.7"

@@ -3,7 +3,3 @@
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
-
-# Paths:
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/.poetry/bin:$PATH"
