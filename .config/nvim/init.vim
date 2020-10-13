@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'} " LSP
   Plug 'sheerun/vim-polyglot' " Syntax, indent, some other things sometimes.
   Plug 'godlygeek/tabular' " Makes tables
-  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
   Plug 'tpope/vim-vinegar'
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-fugitive'
@@ -53,6 +52,7 @@ set noswapfile
 
 " Make_things_pretty:
 colorscheme gruvbox
+let g:netrw_liststyle = 3
 set termguicolors
 set scrolloff=15
 set nowrap
@@ -68,6 +68,14 @@ set incsearch
 set ignorecase
 set cmdheight=2
 set showtabline=2
+
+
+" Tab_settings:
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 
 " Statusline:
@@ -94,12 +102,14 @@ set statusline+=\ [%l/%L:%c]
 set statusline+=\ [%p%%]
 
 
-" Tab_settings:
-autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+" Custom_commands:
+:command -nargs=1 Vres :vertical-resize <args>
+:command -nargs=0 Cheat :!VimCheatSheet.sh
+
+
+" Custom_functions:
+" NONE
+
 
 " The_Forgotten:
 " set showmatch
