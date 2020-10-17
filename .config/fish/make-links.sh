@@ -13,4 +13,9 @@ ln /usr/local/Cellar/fish/3.1.2/share/fish/functions/prompt_pwd.fish prompt_pwd.
 
 # This file controls some fish_git_prompt and 'suffix' settings
 ln /Users/dsbarnes/.config/fish/functions/fish_prompt.fish fish_prompt.fish;
-mv fish_prompt.fish functions/
+mv fish_prompt.fish functions/;
+
+# YOU MUST MAKE THE NVM FILE FIRST! - This file sets up NVM
+# bass is required: https://github.com/edc/bass
+ln ~/.config/fish/functions/nvm.fish nvm.fish;
+mv nvm.fish functions/;
