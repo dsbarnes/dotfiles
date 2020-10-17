@@ -478,7 +478,7 @@ function fish_git_prompt --description "Prompt function for Git"
     end
     set -l format $argv[1]
     if test -z "$format"
-        set format " [%s]"
+        set format "[%s]"
     end
 
     printf "%s$format%s" "$___fish_git_prompt_color_prefix" "$___fish_git_prompt_color_prefix_done$c$b$f$r$p$informative_status$___fish_git_prompt_color_suffix" "$___fish_git_prompt_color_suffix_done"
