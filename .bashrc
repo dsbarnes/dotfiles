@@ -67,10 +67,11 @@ alias cat='bat'             # color for cat
 alias poe='poetry'          # funny Poetry command (python)
 
 # Git:
+alias git-icons="git-prompt-icons.sh"
 alias ga='git add'         # b/c I use git too often not to
 alias gc='git commit -m'
 alias gcl='git clone'
-alias gpr='git pull origin'
+alias gpl='git pull origin'
 alias gpo='git push origin'
 alias gb='git branch -a'
 alias gdiff='git diff'
@@ -78,6 +79,7 @@ alias gstat='git status'
 alias gstash='git stash'
 alias glog='git log'
 alias grao='git remote add origin'
+alias gr='git remote -v'
 alias glo="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 # OhShitGit:

@@ -43,7 +43,6 @@ set spell
 filetype plugin on
 syntax enable
 syntax on
-set spelllang=en_us
 set nocompatible
 set nobackup
 set nowritebackup
