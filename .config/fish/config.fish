@@ -1,3 +1,16 @@
+# $PATH:
+set -gx PATH \
+$HOME/.cargo/bin \
+$HOME/.poetry/bin \
+$HOME/.pyenv/shims \
+$HOME/.nvm/versions/node/v12.18.3/bin \
+$PATH
+
+
+# Vi keybinds:
+fish_vi_key_bindings
+
+
 # Basics
 alias ls='ls -GFh'          # better ls
 alias vi='nvim'             # Neovim instead of vi
