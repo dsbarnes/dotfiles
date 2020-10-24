@@ -17,4 +17,3 @@ function fish_default_mode_prompt --description "Display the default mode for th
         set_color normal
     end
 end
-
